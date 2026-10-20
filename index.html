@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formularz testowy dla dziewięciu kolumn bazy danych">
+    <title>Test bazy danych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="panel" aria-labelledby="page-title">
+            <p class="eyebrow">Panel testowy</p>
+            <h1 id="page-title">Dane do bazy</h1>
+            <p class="intro">Wpisz testowe wartości dla każdej z 9 kolumn, a następnie aktywuj formularz.</p>
+
+            <form id="test-form">
+                <div class="fields">
+                    <label class="field" for="column-1">
+                        <span>Pozycja 1</span>
+                        <input id="column-1" name="column1" type="text" placeholder="Wartość testowa 1" required>
+                    </label>
+                    <label class="field" for="column-2">
+                        <span>Pozycja 2</span>
+                        <input id="column-2" name="column2" type="text" placeholder="Wartość testowa 2" required>
+                    </label>
+                    <label class="field" for="column-3">
+                        <span>Pozycja 3</span>
+                        <input id="column-3" name="column3" type="text" placeholder="Wartość testowa 3" required>
+                    </label>
+                    <label class="field" for="column-4">
+                        <span>Pozycja 4</span>
+                        <input id="column-4" name="column4" type="text" placeholder="Wartość testowa 4" required>
+                    </label>
+                    <label class="field" for="column-5">
+                        <span>Pozycja 5</span>
+                        <input id="column-5" name="column5" type="text" placeholder="Wartość testowa 5" required>
+                    </label>
+                    <label class="field" for="column-6">
+                        <span>Pozycja 6</span>
+                        <input id="column-6" name="column6" type="text" placeholder="Wartość testowa 6" required>
+                    </label>
+                    <label class="field" for="column-7">
+                        <span>Pozycja 7</span>
+                        <input id="column-7" name="column7" type="text" placeholder="Wartość testowa 7" required>
+                    </label>
+                    <label class="field" for="column-8">
+                        <span>Pozycja 8</span>
+                        <input id="column-8" name="column8" type="text" placeholder="Wartość testowa 8" required>
+                    </label>
+                    <label class="field" for="column-9">
+                        <span>Pozycja 9</span>
+                        <input id="column-9" name="column9" type="text" placeholder="Wartość testowa 9" required>
+                    </label>
+                </div>
+
+                <button type="submit">Aktywuj test</button>
+                <p id="form-status" class="status" role="status" aria-live="polite"></p>
+                <pre id="result" class="result" hidden></pre>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
